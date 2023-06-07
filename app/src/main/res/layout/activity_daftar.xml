@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar">
+
+    <ImageView
+        android:id="@+id/lg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/base2"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/daff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lg2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/interbold"
+        android:text="Daftar"
+        android:textColor="@color/abuuu"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="170dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:fontFamily="@font/interregular"
+                android:textSize="16dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/abuu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNama"
+                 />
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Nama"
+                android:fontFamily="@font/interregular"
+                android:textSize="16dp"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/etEmail"
+                app:layout_constraintStart_toStartOf="@+id/etEmail"
+                app:layout_constraintTop_toTopOf="@id/etEmail" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Sandi"
+                android:fontFamily="@font/interregular"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/etEmail"
+                app:layout_constraintStart_toStartOf="@+id/etEmail"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            <EditText
+                android:id="@+id/etKonfir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Konfirmasi Sandi"
+                android:fontFamily="@font/interregular"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/etEmail"
+                app:layout_constraintStart_toStartOf="@+id/etEmail"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+            <EditText
+                android:id="@+id/etTelp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="No Telepon"
+                android:fontFamily="@font/interregular"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/etEmail"
+                app:layout_constraintStart_toStartOf="@+id/etEmail"
+                app:layout_constraintTop_toBottomOf="@+id/etKonfir" />
+
+            <TextView
+                android:id="@+id/kirimkode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="kirim kode"
+                app:layout_constraintStart_toStartOf="@id/etEmail"
+                app:layout_constraintTop_toBottomOf="@id/etTelp"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/button2"
+                app:layout_constraintStart_toStartOf="@id/etEmail"
+                app:layout_constraintTop_toBottomOf="@id/kirimkode"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <TextView
+        android:id="@+id/tanya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah memiliki akun?"
+        android:layout_gravity="center"
+        android:fontFamily="@font/interregular"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:id="@+id/lgn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="14dp"
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

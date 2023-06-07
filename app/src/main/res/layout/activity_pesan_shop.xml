@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesanShop">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/panah2"
+            />
+
+        <TextView
+            android:id="@+id/psname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="70dp"
+            android:text="Saffron Petshop"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="22dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:text="Jl. Imogiri Tim. No125, Giwangan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/interregular"
+        android:textSize="14dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/loc"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jl. Whiskas No. 7"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/detiladd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@id/layout2"
+        android:hint="Tambahkan detil alamat"
+        />
+
+    <TextView
+        android:id="@+id/psn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detiladd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:text="Pesanan"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psn"
+        android:layout_marginLeft="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ps1"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whiskas Pocket Ocean"
+                    android:fontFamily="@font/interregular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish 1.2 Kg"
+                    android:fontFamily="@font/interregular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp59.800"
+                    android:fontFamily="@font/intersemibold"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/satu"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ps2"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pedigree Pouch Chicken"
+                    android:fontFamily="@font/interregular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liver 80 gr"
+                    android:fontFamily="@font/interregular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp6.800"
+                    android:fontFamily="@font/intersemibold"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/satu"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout6"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ps3"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frieskies Party Mix"
+                    android:fontFamily="@font/interregular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beachside 60 gr"
+                    android:fontFamily="@font/interregular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp19.900"
+                    android:fontFamily="@font/intersemibold"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/satu"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/summa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout9"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Ringkasan Pembayaran"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="18dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/summa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Subtotal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:hint="Rp86.500"
+            android:textColor="@color/black"
+            android:fontFamily="@font/intersemibold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout12"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Ongkir"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:hint="Rp11.000"
+            android:textColor="@color/black"
+            android:fontFamily="@font/intersemibold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout13"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Metode Pembayaran"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="120dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout14"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:hint="Rp97.500"
+            android:textColor="@color/black"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout15"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/order"
+        />
+
+
+</RelativeLayout>

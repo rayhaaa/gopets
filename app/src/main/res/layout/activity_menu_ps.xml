@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPS">
+
+    <LinearLayout
+        android:id="@+id/rt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/panah2"
+            />
+
+        <TextView
+            android:id="@+id/psname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="Saffron Petshop"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="22dp"
+            />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/star"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="5,0"
+            android:fontFamily="@font/interregular"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rt1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:text="Jl. Imogiri Tim. No125, Giwangan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/interregular"
+        android:textSize="14dp"
+        />
+
+    <ImageView
+        android:id="@+id/garkun3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addr"
+        android:background="@drawable/garkun"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/garkun3"
+        />
+
+    <TextView
+        android:id="@+id/maku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="Makanan Kucing"
+        android:fontFamily="@font/interbold"
+        android:textSize="15dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/maku"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/mk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mk1"
+            />
+
+        <Button
+            android:id="@+id/mk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/mk2"
+            />
+        <Button
+            android:id="@+id/mk3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/mk3"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/maan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Makanan Anjing"
+        android:fontFamily="@font/interbold"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/maan"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/ma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ma1"
+            />
+        <Button
+            android:id="@+id/ma2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ma2"
+            />
+        <Button
+            android:id="@+id/ma3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ma3"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rawat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Perawatan"
+        android:fontFamily="@font/interbold"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rawat"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/rw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rw1"
+            />
+        <Button
+            android:id="@+id/rw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rw2"
+            />
+        <Button
+            android:id="@+id/rw3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rw3"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Perlengkapan"
+        android:fontFamily="@font/interbold"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/stuff"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/st1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/st1"
+            />
+        <Button
+            android:id="@+id/st2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/st2"
+            />
+        <Button
+            android:id="@+id/st3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/st3"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

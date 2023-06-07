@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351647950126",
+    "project_id": "gopets-e0a6e",
+    "storage_bucket": "gopets-e0a6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351647950126:android:d8d09689305451002786bf",
+        "android_client_info": {
+          "package_name": "com.example.gopetsnew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-eS14GZBgzKmTcb-EzUlqwuMuisiNgDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

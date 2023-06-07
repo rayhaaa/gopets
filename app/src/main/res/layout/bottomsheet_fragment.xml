@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oren"
+    >
+
+    <TextView
+        android:id="@+id/detpes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Detail Pesanan"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linelay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="No. Transaksi"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:hint="0006270325"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Tgl Transaksi"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:hint="25 Des 2023 18.00 WIB"
+            android:gravity="right"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Metode Pembayaran"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:hint="QRIS"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelay4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:text="Rp20.000"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Poin"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:hint="197"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interregular"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

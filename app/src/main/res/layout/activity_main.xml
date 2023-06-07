@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/lg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/logo1"
+        />
+
+    <TextView
+        android:id="@+id/sapa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/interbold"
+        android:text="Selamat Datang!"
+        android:inputType="textMultiLine"
+        android:textColor="@color/abuu"
+        android:textSize="20pt"
+        />
+
+    <ImageView
+        android:id="@+id/gbr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gambar1"
+        android:layout_below="@id/sapa"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="0dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kotak1"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/gbr1"
+        app:cardBackgroundColor="@color/orange"
+        app:cardCornerRadius="35dp"
+        android:layout_marginTop="35dp"
+        >
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress11"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:fontFamily="@font/interregular"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/editTextTextPassword4"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextEmailAddress11"
+            android:layout_alignStart="@+id/editTextTextEmailAddress11"
+            android:layout_alignEnd="@+id/editTextTextEmailAddress11"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:fontFamily="@font/interregular"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kotak1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/button3"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/tanya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/interregular"
+            android:text="Belum memiliki akun?"
+            android:textColor="@color/abu"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/dftr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/intersemibold"
+            android:text="Daftar"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

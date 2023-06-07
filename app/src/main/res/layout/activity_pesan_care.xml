@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesanCare">
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/panah2"
+
+        />
+
+    <TextView
+        android:id="@+id/lok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi"
+        android:fontFamily="@font/intersemibold"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Whiskas no No. 7"
+        android:layout_below="@id/lok"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="14dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/garkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:background="@drawable/garkun"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/psname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/garkun"
+        android:text="Nicon Petshop"
+        android:textSize="14dp"
+        android:fontFamily="@font/intersemibold"
+        />
+
+    <TextView
+        android:id="@+id/psaddr"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psname"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Jl. Parangtritis No.108, Mantrijeron, Kec. Mantrijeron, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55143"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/interregular"
+        android:textSize="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/garkun2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psaddr"
+        android:background="@drawable/garkun"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lila1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garkun2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Hewan"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Nama Hewan"
+            android:fontFamily="@font/intersemibold"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lila2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lila1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/lila1"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lila2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="Pesanan"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="Grooming"
+        android:layout_below="@id/pesan"
+        android:fontFamily="@font/interregular"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="Vaksin"
+        android:layout_below="@id/checkBox"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="Steril"
+        android:layout_below="@id/checkBox2"
+        />
+
+    <TextView
+        android:id="@+id/sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="Ringkasan Pembayaran"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/arout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sumar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Layanan"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Rp200.000"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arout1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ongkir"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:text="Rp11.000"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arout2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metode Pembayaran"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="QRIS"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arout3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:text="Rp211.000"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/abuu"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pesen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/arout4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pesan"
+        />
+
+
+</RelativeLayout>
